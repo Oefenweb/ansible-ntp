@@ -17,3 +17,13 @@
     mode: 0644
   notify: restart ntp
   tags: [configuration, ntp, ntp-configuration]
+
+- name: add logrotate configuration
+  template:
+    src: templates/etc/logrotate.d/ntpd.j2
+    dest: /etc/logrotate.d/ntpd
+    owner: root
+    group: root
+    mode: 0644
+  when: 'ntp_statsdir|bool'
+

@@ -1,0 +1,11 @@
+# {{ ansible_managed }}
+{{ ntp_statsdir }}/*.log {
+        weekly
+        missingok
+        rotate 8
+        compress
+        delaycompress
+        notifempty
+        copytruncate
+}
+
