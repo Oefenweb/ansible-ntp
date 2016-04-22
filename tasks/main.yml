@@ -26,4 +26,5 @@
     group: root
     mode: 0644
   when: 'ntp_statsdir|bool'
+  tags: [configuration, ntp, ntp-configuration]
 
