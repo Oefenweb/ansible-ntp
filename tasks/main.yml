@@ -6,7 +6,10 @@
     state: latest
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
-  tags: [configuration, ntp, ntp-install]
+  tags:
+    - configuration
+    - ntp
+    - ntp-install
 
 - name: update configuration file
   template:
@@ -16,15 +19,7 @@
     group: root
     mode: 0644
   notify: restart ntp
-  tags: [configuration, ntp, ntp-configuration]
-
-- name: add logrotate configuration
-  template:
-    src: templates/etc/logrotate.d/ntpd.j2
-    dest: /etc/logrotate.d/ntpd
-    owner: root
-    group: root
-    mode: 0644
-  when: 'ntp_statsdir|bool'
-  tags: [configuration, ntp, ntp-configuration]
-
+  tags:
+    - configuration
+    - ntp
+    - ntp-configuration

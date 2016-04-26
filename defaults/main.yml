@@ -2,8 +2,7 @@
 ---
 ntp_driftfile: /var/lib/ntp/ntp.drift
 
-# Enable this if you want statistics to be logged.
-# Must not end with a slash
+# Enable this if you want statistics to be logged (must not end with a slash)
 ntp_statsdir: false
 
 ntp_statistics:
