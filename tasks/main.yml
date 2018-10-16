@@ -2,11 +2,10 @@
 ---
 - name: install
   apt:
-    name: "{{ item }}"
+    name: "{{ ntp_dependencies }}"
     state: "{{ apt_install_state | default('latest') }}"
     update_cache: true
     cache_valid_time: "{{ apt_update_cache_valid_time | default(3600) }}"
-  with_items: "{{ ntp_dependencies }}"
   tags:
     - configuration
     - ntp
