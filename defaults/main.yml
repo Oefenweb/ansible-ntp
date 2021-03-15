@@ -1,4 +1,4 @@
-# defaults file for ntp
+# defaults file
 ---
 ntp_driftfile: /var/lib/ntp/ntp.drift
 

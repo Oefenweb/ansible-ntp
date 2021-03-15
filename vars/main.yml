@@ -1,4 +1,4 @@
-# vars file for ntp
+# vars file
 ---
 ntp_dependencies:
   - ntp

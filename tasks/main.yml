@@ -1,4 +1,4 @@
-# tasks file for ntp
+# tasks file
 ---
 - name: install
   apt:

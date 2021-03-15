@@ -1,6 +1,7 @@
-# meta file for ntp
+# meta file
 ---
 galaxy_info:
+  namespace: oefenweb
   role_name: ntp
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.

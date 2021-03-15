@@ -1,4 +1,4 @@
-# handlers file for ntp
+# handlers file
 ---
 - name: restart ntp
   service:
