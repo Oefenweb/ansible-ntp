@@ -36,7 +36,7 @@ None
 ---
 - hosts: all
   roles:
-    - ntp
+    - oefenweb.ntp
 ```
 
 #### Example (with statistics to be logged (and rotated))
@@ -45,8 +45,8 @@ None
 ---
 - hosts: all
   roles:
-    - ntp
-    - logrotated
+    - oefenweb.ntp
+    - oefenweb.logrotated
   vars:
     ntp_statsdir: /var/log/ntpstats
     logrotated_logrotate_d_files:
