@@ -1,9 +1,8 @@
 # meta file
 ---
 galaxy_info:
-  namespace: oefenweb
+  author: oefenweb
   role_name: ntp
-  author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up a ntp server in Debian-like systems
   license: BSD
